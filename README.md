@@ -67,17 +67,25 @@ The two IP to Country providers I used are below:
 - [IP Stack](https://ipstack.com/)
 - [IP Info](https://ipinfo.io/)
 
+## Libraries
+
+I chose to use Axios and Express, as these sped up development and are industry standard tools.
+
+## Simple Cache
+
+I implemented a caching mechanism that simply uses a JSON object attached to my express app.
+
 # Further Work
 
 Given that I was instructed to limit myself to two hours of effort and my expertise in backend lie more with Python and Golang, there were several crucial items I didn't get to. I will go through each and describe what I would have done.
 
 ## Implement should_use_ipstack
 
-Currently, this function is only stubbed out. I would implement, probably leveraging the solution described below in `Per-Vendor Global Configurable Rate Limit`.
+Currently, this function is only stubbed out. I would implement this, probably leveraging the solution described below in `Per-Vendor Global Configurable Rate Limit`.
 
 ## Per-Vendor Global Configurable Rate Limit
 
-I started working on this but did not complete it. Had I had more time, I likely would have explored a solution like redis as opposed to open source JS libraries, which I had trouble implementing.
+I started working on this but did not complete it. Had I had more time, I likely would have implemented a fixed window solution.
 
 ## Testing
 
